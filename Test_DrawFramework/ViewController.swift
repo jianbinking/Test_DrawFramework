@@ -39,7 +39,11 @@ class ViewController: UIViewController {
         
         let dw2 = DrawView.init(frame: .init(x: 50, y: 350, width: 200, height: 200), diagram: ex3)
         dw2.backgroundColor = .yellow
-        self.view.addSubview(dw2)
+//        self.view.addSubview(dw2)
+        
+        
+        let dw3 = SnakeDrawView.init(frame: .init(x: 50, y: 350, width: 200, height: 200), scale: 10)
+        self.view.addSubview(dw3)
         
     }
 

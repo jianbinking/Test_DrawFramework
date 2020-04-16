@@ -17,19 +17,16 @@ struct DoubleSideQueue<Element: Equatable> {
         if let p = left.last {
             return p
         }
-        return right.last
+        return right.first
     }
     var tail: Element? {
         if let p = right.last {
             return p
         }
-        return left.last
-    }
-    var length: Int {
-        return left.count + right.count
+        return left.first
     }
     
-    mutating func appendHead(_ pos: Element) {
+    mutating func pushHead(_ pos: Element) {
         left.append(pos)
     }
     
@@ -41,7 +38,7 @@ struct DoubleSideQueue<Element: Equatable> {
         return left.popLast()
     }
     
-    mutating func appendTail(_ pos: Element) {
+    mutating func pushTail(_ pos: Element) {
         right.append(pos)
     }
     
@@ -52,8 +49,30 @@ struct DoubleSideQueue<Element: Equatable> {
         }
         return right.popLast()
     }
+}
+
+extension DoubleSideQueue: Collection {
     
-    func contains(_ e: Element) -> Bool {
-        return left.contains(e) || right.contains(e)
+    var startIndex: Int {
+        return 0
     }
+    
+    var endIndex: Int {
+        return left.count + right.count
+    }
+    
+    func index(after i: Int) -> Int {
+        precondition(i < endIndex)
+        return i + 1
+    }
+    
+    subscript(position: Int) -> Element {
+        precondition((0..<endIndex).contains(position), "out of range")
+        if position < left.count {
+            return left[left.count - position - 1]
+        } else {
+            return right[position - left.count]
+        }
+    }
+
 }
