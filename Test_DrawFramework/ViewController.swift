@@ -31,7 +31,13 @@ class ViewController: UIViewController {
         
         let ex2 = Diagram.vGraph(input: cities)
         
-        let dw2 = DrawView.init(frame: .init(x: 50, y: 350, width: 200, height: 200), diagram: ex2)
+        var blue = Diagram.square(side: 3).fill(color: .blue)
+        var red = Diagram.rect(width: 3, height: 5).fill(color: .red)
+        red = red.appendBottom(Diagram.circle(diameter: 2).fill(color: .purple).alignTop())
+        var circle = Diagram.circle(diameter: 2).fill(color: .green)
+        let ex3 = Diagram.hcat(diagrams: [blue, red, circle])
+        
+        let dw2 = DrawView.init(frame: .init(x: 50, y: 350, width: 200, height: 200), diagram: ex3)
         dw2.backgroundColor = .yellow
         self.view.addSubview(dw2)
         

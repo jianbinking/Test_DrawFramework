@@ -18,6 +18,9 @@
 		236978EE244844AD00E97764 /* CGSize+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 236978ED244844AD00E97764 /* CGSize+Extension.swift */; };
 		236978F0244846E600E97764 /* DrawExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 236978EF244846E600E97764 /* DrawExtension.swift */; };
 		236978F224484BF600E97764 /* DrawView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 236978F124484BF600E97764 /* DrawView.swift */; };
+		236978F5244867E900E97764 /* Snake.swift in Sources */ = {isa = PBXBuildFile; fileRef = 236978F4244867E900E97764 /* Snake.swift */; };
+		236978F724486C3400E97764 /* SnakeDrawView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 236978F624486C3400E97764 /* SnakeDrawView.swift */; };
+		236978F924486F9A00E97764 /* DoubleSideQueue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 236978F824486F9A00E97764 /* DoubleSideQueue.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +37,9 @@
 		236978ED244844AD00E97764 /* CGSize+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CGSize+Extension.swift"; sourceTree = "<group>"; };
 		236978EF244846E600E97764 /* DrawExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrawExtension.swift; sourceTree = "<group>"; };
 		236978F124484BF600E97764 /* DrawView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrawView.swift; sourceTree = "<group>"; };
+		236978F4244867E900E97764 /* Snake.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Snake.swift; sourceTree = "<group>"; };
+		236978F624486C3400E97764 /* SnakeDrawView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SnakeDrawView.swift; sourceTree = "<group>"; };
+		236978F824486F9A00E97764 /* DoubleSideQueue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoubleSideQueue.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,6 +79,7 @@
 				236978ED244844AD00E97764 /* CGSize+Extension.swift */,
 				236978EF244846E600E97764 /* DrawExtension.swift */,
 				236978F124484BF600E97764 /* DrawView.swift */,
+				236978F3244867D700E97764 /* snake */,
 				236978DA2448437200E97764 /* Main.storyboard */,
 				236978E02448437600E97764 /* Assets.xcassets */,
 				236978E22448437600E97764 /* LaunchScreen.storyboard */,
@@ -80,6 +87,16 @@
 				236978DD2448437200E97764 /* Test_DrawFramework.xcdatamodeld */,
 			);
 			path = Test_DrawFramework;
+			sourceTree = "<group>";
+		};
+		236978F3244867D700E97764 /* snake */ = {
+			isa = PBXGroup;
+			children = (
+				236978F4244867E900E97764 /* Snake.swift */,
+				236978F824486F9A00E97764 /* DoubleSideQueue.swift */,
+				236978F624486C3400E97764 /* SnakeDrawView.swift */,
+			);
+			path = snake;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -158,9 +175,12 @@
 				236978F224484BF600E97764 /* DrawView.swift in Sources */,
 				236978D52448437200E97764 /* AppDelegate.swift in Sources */,
 				236978EE244844AD00E97764 /* CGSize+Extension.swift in Sources */,
+				236978F924486F9A00E97764 /* DoubleSideQueue.swift in Sources */,
 				236978DF2448437200E97764 /* Test_DrawFramework.xcdatamodeld in Sources */,
 				236978EC2448439400E97764 /* Diagram.swift in Sources */,
+				236978F724486C3400E97764 /* SnakeDrawView.swift in Sources */,
 				236978D72448437200E97764 /* SceneDelegate.swift in Sources */,
+				236978F5244867E900E97764 /* Snake.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
