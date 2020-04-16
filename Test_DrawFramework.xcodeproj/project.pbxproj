@@ -14,6 +14,10 @@
 		236978DF2448437200E97764 /* Test_DrawFramework.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 236978DD2448437200E97764 /* Test_DrawFramework.xcdatamodeld */; };
 		236978E12448437600E97764 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 236978E02448437600E97764 /* Assets.xcassets */; };
 		236978E42448437600E97764 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 236978E22448437600E97764 /* LaunchScreen.storyboard */; };
+		236978EC2448439400E97764 /* Diagram.swift in Sources */ = {isa = PBXBuildFile; fileRef = 236978EB2448439400E97764 /* Diagram.swift */; };
+		236978EE244844AD00E97764 /* CGSize+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 236978ED244844AD00E97764 /* CGSize+Extension.swift */; };
+		236978F0244846E600E97764 /* DrawExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 236978EF244846E600E97764 /* DrawExtension.swift */; };
+		236978F224484BF600E97764 /* DrawView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 236978F124484BF600E97764 /* DrawView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +30,10 @@
 		236978E02448437600E97764 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		236978E32448437600E97764 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		236978E52448437600E97764 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		236978EB2448439400E97764 /* Diagram.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Diagram.swift; sourceTree = "<group>"; };
+		236978ED244844AD00E97764 /* CGSize+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CGSize+Extension.swift"; sourceTree = "<group>"; };
+		236978EF244846E600E97764 /* DrawExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrawExtension.swift; sourceTree = "<group>"; };
+		236978F124484BF600E97764 /* DrawView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrawView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,6 +69,10 @@
 				236978D42448437200E97764 /* AppDelegate.swift */,
 				236978D62448437200E97764 /* SceneDelegate.swift */,
 				236978D82448437200E97764 /* ViewController.swift */,
+				236978EB2448439400E97764 /* Diagram.swift */,
+				236978ED244844AD00E97764 /* CGSize+Extension.swift */,
+				236978EF244846E600E97764 /* DrawExtension.swift */,
+				236978F124484BF600E97764 /* DrawView.swift */,
 				236978DA2448437200E97764 /* Main.storyboard */,
 				236978E02448437600E97764 /* Assets.xcassets */,
 				236978E22448437600E97764 /* LaunchScreen.storyboard */,
@@ -142,8 +154,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				236978D92448437200E97764 /* ViewController.swift in Sources */,
+				236978F0244846E600E97764 /* DrawExtension.swift in Sources */,
+				236978F224484BF600E97764 /* DrawView.swift in Sources */,
 				236978D52448437200E97764 /* AppDelegate.swift in Sources */,
+				236978EE244844AD00E97764 /* CGSize+Extension.swift in Sources */,
 				236978DF2448437200E97764 /* Test_DrawFramework.xcdatamodeld in Sources */,
+				236978EC2448439400E97764 /* Diagram.swift in Sources */,
 				236978D72448437200E97764 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
