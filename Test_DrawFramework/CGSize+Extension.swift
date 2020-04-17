@@ -42,6 +42,13 @@ extension CGSize {
         let space = vector.size * (size - rect.size)
         return .init(origin: rect.origin - space.point, size: size)
     }
+    
+    func center(in rect: CGRect, xoff: CGFloat = 0, yoff: CGFloat = 0) -> CGRect {
+        var rc = CGRect.init(x: rect.midX - width / 2, y: rect.midY - height / 2, width: width, height: height)
+        rc.origin.x += xoff / 2
+        rc.origin.y += yoff / 2
+        return rc
+    }
 }
 
 extension CGVector {
